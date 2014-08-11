@@ -1,5 +1,5 @@
 # install pptpd
-apt-get install pptpd
+apt-get install -y pptpd
 # pptpd.conf
 cd /etc
 rm pptpd.conf
