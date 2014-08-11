@@ -9,7 +9,7 @@ cd /etc/ppp
 rm pptpd-options
 wget https://raw.githubusercontent.com/danhantao/ec2-vpn/master/pptpd-options 
 # USERNAME PASSWORD
-echo "$USERNAME pptpd $PASSWORD *" | sudo tee -a /etc/ppp/chap-secrets
+echo "$VPN_USERNAME pptpd $VPN_PASSWORD *" | sudo tee -a /etc/ppp/chap-secrets
 /etc/init.d/pptpd restart
 # sysctl.conf
 cd /etc
